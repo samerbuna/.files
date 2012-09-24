@@ -264,12 +264,50 @@ au BufRead,BufNewFile *.sql        set ft=pgsql
 au BufRead,BufNewFile *.rl         set ft=ragel
 au BufRead,BufNewFile *.svg        set ft=svg
 au BufRead,BufNewFile *.haml       set ft=haml
-au BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=2 sw=2 expandtab
-au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
-au BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.md         set ft=mkd tw=120 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.markdown   set ft=mkd tw=120 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.ronn       set ft=mkd tw=120 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.coffee     set ft=coffee sw=2 sts=2 isk+=$
+au BufRead,BufNewFile *.slim       set ft=slim sw=2 sts=2
 
-au Filetype gitcommit set tw=68  spell
-au Filetype ruby      set tw=80  ts=2
+  " autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *
+  "       \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif
+
+  " autocmd BufRead * if ! did_filetype() && getline(1)." ".getline(2).
+  "       \ " ".getline(3) =~? '<\%(!DOCTYPE \)\=html\>' | setf html | endif
+
+  " autocmd FileType javascript,coffee      setlocal et sw=2 sts=2 isk+=$
+  " autocmd FileType html,xhtml,css,scss    setlocal et sw=2 sts=2
+  " autocmd FileType eruby,yaml,ruby        setlocal et sw=2 sts=2
+  " autocmd FileType cucumber               setlocal et sw=2 sts=2
+  " autocmd FileType gitcommit              setlocal spell
+  " autocmd FileType gitconfig              setlocal noet sw=8
+  " autocmd FileType ruby                   setlocal comments=:#\  tw=79
+  " autocmd FileType sh,csh,zsh             setlocal et sw=2 sts=2
+  " autocmd FileType vim                    setlocal et sw=2 sts=2 keywordprg=:help
+
+  " autocmd Syntax   css  syn sync minlines=50
+
+  " autocmd FileType ruby nmap <buffer> <leader>bt <Plug>BlockToggle
+  " autocmd BufRead *_spec.rb nmap <buffer> <leader>l :<C-U>call <SID>ExtractIntoRspecLet()<CR>
+
+  " autocmd User Rails nnoremap <buffer> <D-r> :<C-U>Rake<CR>
+  " autocmd User Rails nnoremap <buffer> <D-R> :<C-U>.Rake<CR>
+  " autocmd User Rails Rnavcommand decorator app/decorators -suffix=_decorator.rb -default=model()
+  " autocmd User Rails Rnavcommand presenter app/presenters -suffix=_presenter.rb -default=model()
+  " autocmd User Rails Rnavcommand uploader app/uploaders -suffix=_uploader.rb -default=model()
+  " autocmd User Rails Rnavcommand steps features/step_definitions -suffix=_steps.rb -default=web
+  " autocmd User Rails Rnavcommand blueprint spec/blueprints -suffix=_blueprint.rb -default=model()
+  " autocmd User Rails Rnavcommand factory spec/factories -suffix=_factory.rb -default=model()
+  " autocmd User Rails Rnavcommand fabricator spec/fabricators -suffix=_fabricator.rb -default=model()
+  " autocmd User Rails Rnavcommand feature features -suffix=.feature -default=cucumber
+  " autocmd User Rails Rnavcommand serializer app/serializers -suffix=_serializer.rb -default=model()
+  " autocmd User Rails Rnavcommand support spec/support features/support -default=env
+  " autocmd User Rails Rnavcommand worker app/workers -suffix=_worker.rb -default=model()
+  " autocmd User Fugitive command! -bang -bar -buffer -nargs=* Gpr :Git<bang> pull --rebase <args>
+
+au Filetype gitcommit set tw=120  spell
+au Filetype ruby      set ts=2
 
 au BufNewFile,BufRead *.mustache        setf mustache
 

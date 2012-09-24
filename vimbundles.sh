@@ -23,11 +23,10 @@ get_bundle therubymug vim-pyte
 get_bundle tpope vim-abolish
 get_bundle tpope vim-bundler
 get_bundle tpope vim-commentary
-get_bundle tpope vim-cucumber
 get_bundle tpope vim-endwise
+get_bundle tpope vim-eunuch
 get_bundle tpope vim-fugitive
 get_bundle tpope vim-git
-get_bundle tpope vim-haml
 get_bundle tpope vim-markdown
 get_bundle tpope vim-pathogen
 get_bundle tpope vim-rake
@@ -43,8 +42,11 @@ get_bundle wgibbs vim-irblack
 get_bundle vim-scripts bufkill.vim
 get_bundle vim-scripts bufexplorer.zip
 get_bundle jgdavey vim-blockle
+get_bundle jgdavey vim-railscasts
 get_bundle jgdavey tslime.vim
+get_bundle jgdavey vim-turbux
 get_bundle gregsexton gitv
-get_bundle molok vim-smartusline
+get_bundle nathanaelkane vim-indent-guides
+get_bundle bbommarito vim-slim
 
 vim -c 'call pathogen#helptags()|q'
