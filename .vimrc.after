@@ -1,0 +1,3 @@
+nnoremap <silent> <Tab> :bn<CR>
+nnoremap <silent> <S-Tab> :bp<CR>
+nnoremap <silent> <C-K> :%s/\s\+$//g<CR>
