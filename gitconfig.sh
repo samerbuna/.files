@@ -42,7 +42,7 @@ git config --global alias.lc "!git log origin/\$(git name-rev --name-only HEAD).
 git config --global alias.rc "!git log ..origin/\$(git name-rev --name-only HEAD)"
 git config --global alias.rebase-new "!git rebase -i origin/\$(git name-rev --name-only HEAD)"
 git config --global alias.edit-all "!vim \$(git status --short | awk '$1 ~ /^M$/ {print $2}')"
-git config --global alias.cleanup "!git remote prune origin && git gc && git clean -df"
+git config --global alias.wipe "!git reset --hard && git clean -df && git submodule init && git submodule update && git submodule foreach git clean -fd && git remote prune origin && git gc"
 
 git config --global color.branch auto
 git config --global color.diff auto

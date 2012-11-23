@@ -1,5 +1,5 @@
-# dotfiles
+# .files
 
-    sh dotfiles/setup.sh
+    sh .files/setup.sh
 
-    echo "source ~/dotfiles/.source" >> ~/.bashrc
+    echo "source ~/.files/.source" >> ~/.bashrc
