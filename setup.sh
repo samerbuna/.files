@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 GENERAL_INSTALLS=true
 
 ################# APT
 
-if [ "$GENERAL_INSTALLS" = "true" ]; then
+if [[ "$GENERAL_INSTALLS" = "true" ]]; then
   sudo apt-get update
   sudo apt-get upgrade -y
   sudo apt-get autoremove -y
@@ -14,7 +14,7 @@ fi
 
 ################# RVM/RUBY
 
-if [ ! -d $HOME/.rvm ]; then
+if [[ ! -d $HOME/.rvm ]]; then
   curl -L get.rvm.io | bash -s stable
   # rvm use --default ruby
 else
@@ -24,8 +24,7 @@ fi
 
 ################# VIM
 
-if [ ! -d $HOME/.vim ]
-then
+if [[ ! -d $HOME/.vim ]]; then
   git clone https://github.com/carlhuda/janus.git $HOME/.vim
 else
   cd $HOME/.vim && git pull
@@ -35,9 +34,8 @@ cd $HOME/.vim && rake
 
 ################# .files/GIT
 
-if [ ! -d $HOME/.files ]
-then
-  git clone https://github.com/codective/.files $HOME/.files
+if [[ ! -d $HOME/.files ]]; then
+  git clone https://github.com/samerbuna/.files.git $HOME/.files
 else
   cd $HOME/.files && git pull --rebase
 fi
