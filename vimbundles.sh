@@ -12,16 +12,16 @@ get_bundle() {
   )
 }
 
-get_bundle adamlowe vim-slurper
+#get_bundle adamlowe vim-slurper
 get_bundle duff vim-bufonly
-get_bundle godlygeek tabular
+#get_bundle godlygeek tabular
 get_bundle kchmck vim-coffee-script
 get_bundle leshill vim-json
-get_bundle mileszs ack.vim
+#get_bundle mileszs ack.vim
 get_bundle pangloss vim-javascript
-get_bundle therubymug vim-pyte
-get_bundle tpope vim-abolish
-get_bundle tpope vim-bundler
+#get_bundle therubymug vim-pyte
+#get_bundle tpope vim-abolish
+#get_bundle tpope vim-bundler
 get_bundle tpope vim-commentary
 get_bundle tpope vim-endwise
 get_bundle tpope vim-eunuch
@@ -36,17 +36,17 @@ get_bundle tpope vim-repeat
 get_bundle tpope vim-speeddating
 get_bundle tpope vim-surround
 get_bundle tpope vim-unimpaired
-get_bundle tpope vim-vividchalk
+#get_bundle tpope vim-vividchalk
 get_bundle vim-ruby vim-ruby
-get_bundle wgibbs vim-irblack
-get_bundle vim-scripts bufkill.vim
-get_bundle vim-scripts bufexplorer.zip
-get_bundle jgdavey vim-blockle
-get_bundle jgdavey vim-railscasts
-get_bundle jgdavey tslime.vim
-get_bundle jgdavey vim-turbux
-get_bundle gregsexton gitv
-get_bundle nathanaelkane vim-indent-guides
+#get_bundle wgibbs vim-irblack
+#get_bundle vim-scripts bufkill.vim
+#get_bundle vim-scripts bufexplorer.zip
+#get_bundle jgdavey vim-blockle
+#get_bundle jgdavey vim-railscasts
+#get_bundle jgdavey tslime.vim
+#get_bundle jgdavey vim-turbux
+#get_bundle gregsexton gitv
+#get_bundle nathanaelkane vim-indent-guides
 get_bundle bbommarito vim-slim
 
 vim -c 'call pathogen#helptags()|q'

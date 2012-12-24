@@ -1,5 +1,0 @@
-nnoremap <silent> <Tab> :bn<CR>
-nnoremap <silent> <S-Tab> :bp<CR>
-nnoremap <silent> <C-K> :%s/\s\+$//g<CR>
-
-vnoremap <F2> d:execute 'normal i' . join(sort(split(getreg('"'))), ' ')<CR>
