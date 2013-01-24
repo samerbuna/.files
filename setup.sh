@@ -10,7 +10,7 @@ if [[ "$GENERAL_INSTALLS" = "true" ]]; then
   sudo apt-get upgrade -y
   sudo apt-get autoremove -y
   sudo apt-get autoclean -y
-  sudo apt-get install -y apache2 apache2-prefork-dev autoconf automake bison build-essential curl exuberant-ctags g++ git imagemagick iproute libapache2-mod-jk libapr1-dev libaprutil1-dev libc6-dev libcrypt-openssl-random-perl libcrypt-passwdmd5-perl libcurl4-openssl-dev libreadline-dev libreadline6 libreadline6-dev libssl-dev libstdc++5 libtool libxml2-dev libxslt-dev libyaml-dev ncurses-dev openssl pkg-config portmap postgresql redis-server rlwrap rsh-server tmux vim whois zlib1g zlib1g-dev nodejs npm
+  sudo apt-get install -y autoconf automake build-essential curl exuberant-ctags g++ git iproute libreadline-dev libreadline6 libreadline6-dev ncurses-dev openssl pkg-config portmap postgresql rlwrap tmux vim whois nodejs npm
 fi
 
 ################# RVM/RUBY
