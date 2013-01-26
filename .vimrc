@@ -132,3 +132,8 @@ let g:rails_menu=2
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+let &t_ti.="\e[?7727h"
+let &t_te.="\e[?7727l"
+noremap <Esc>O[ <Esc>
+noremap! <Esc>O[ <Esc>

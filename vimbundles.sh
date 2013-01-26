@@ -47,6 +47,6 @@ get_bundle vim-ruby vim-ruby
 #get_bundle jgdavey vim-turbux
 #get_bundle gregsexton gitv
 #get_bundle nathanaelkane vim-indent-guides
-get_bundle bbommarito vim-slim
+#get_bundle bbommarito vim-slim
 
 vim -c 'call pathogen#helptags()|q'

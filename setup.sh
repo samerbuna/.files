@@ -10,7 +10,7 @@ if [[ "$GENERAL_INSTALLS" = "true" ]]; then
   sudo apt-get upgrade -y
   sudo apt-get autoremove -y
   sudo apt-get autoclean -y
-  sudo apt-get install -y autoconf automake build-essential curl exuberant-ctags g++ git iproute libreadline-dev libreadline6 libreadline6-dev ncurses-dev openssl pkg-config portmap postgresql rlwrap tmux vim whois nodejs npm
+  sudo apt-get install -y autoconf automake build-essential curl exuberant-ctags g++ git iproute libreadline-dev libreadline6 libreadline6-dev ncurses-dev openssl pkg-config portmap rlwrap tmux vim whois nodejs npm
 fi
 
 ################# RVM/RUBY
