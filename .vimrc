@@ -9,9 +9,7 @@ syntax on
 
 set autoindent              " automatic indent new lines
 set autoread                " reload files (no local changes only)
-set backspace=2             " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-set backspace=start,indent
 set backupcopy=yes                     " keep attributes of original file
 set backupdir=$HOME/.vim/backup        " store backups under ~/.vim/backup
 set backupskip=/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*
@@ -132,8 +130,3 @@ let g:rails_menu=2
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
-
-let &t_ti.="\e[?7727h"
-let &t_te.="\e[?7727l"
-noremap <Esc>O[ <Esc>
-noremap! <Esc>O[ <Esc>
