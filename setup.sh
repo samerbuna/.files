@@ -13,6 +13,15 @@ if [[ "$GENERAL_INSTALLS" = "true" ]]; then
   sudo apt-get install -y autoconf automake build-essential curl exuberant-ctags g++ git iproute libreadline-dev libreadline6 libreadline6-dev ncurses-dev openssl pkg-config portmap rlwrap tmux vim whois nodejs npm
 fi
 
+################# SOLARIZED
+
+if [[ ! -f $HOME/.dircolors ]]; then
+  cd $HOME
+  wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+  mv dircolors.ansi-dark .dircolors
+  eval `dircolors ~/.dircolors`
+fi
+
 ################# RVM/RUBY
 
 echo "rvm..."

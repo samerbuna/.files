@@ -5,8 +5,6 @@ endif
 
 filetype plugin indent on
 
-syntax on
-
 set autoindent              " automatic indent new lines
 set autoread                " reload files (no local changes only)
 set backspace=indent,eol,start
@@ -103,7 +101,7 @@ map ,dt :tabnew %:h/<CR>
 map ,f :tabnew <cfile><CR>
 
 autocmd FileType javascript setlocal nocindent
-au Filetype sh,bash set ts=4 sts=4 sw=4 expandtab
+au Filetype sh,bash set ts=2 sts=2 sw=2 expandtab
 let g:is_bash = 1
 
 au BufRead,BufNewFile *.rpdf       set ft=ruby
@@ -115,13 +113,14 @@ au BufRead,BufNewFile *.sql        set ft=pgsql
 au BufRead,BufNewFile *.rl         set ft=ragel
 au BufRead,BufNewFile *.svg        set ft=svg
 au BufRead,BufNewFile *.haml       set ft=haml
+au BufRead,BufNewFile *.hbs        set ft=html
 au BufRead,BufNewFile *.md         set ft=mkd ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.markdown   set ft=mkd ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.ronn       set ft=mkd ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.coffee     set ft=coffee sw=2 sts=2 isk+=$
 au BufRead,BufNewFile *.slim       set ft=slim sw=2 sts=2
-au Filetype gitcommit 		   set tw=150  spell
-au Filetype ruby      		   set ts=2
+au Filetype gitcommit              set tw=150  spell
+au Filetype ruby                   set ts=2
 
 au BufNewFile,BufRead *.mustache   setf mustache
 
@@ -130,3 +129,17 @@ let g:rails_menu=2
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+" se t_Co=16
+set background=dark
+colorscheme solarized
+
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
+
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 2
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=green   ctermbg=green
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
