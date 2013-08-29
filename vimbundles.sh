@@ -45,5 +45,6 @@ get_bundle tpope vim-speeddating
 get_bundle tpope vim-surround
 get_bundle tpope vim-unimpaired
 get_bundle vim-ruby vim-ruby
+get_bundle wookiehangover jshint.vim
 
 vim -c 'call pathogen#helptags()|q'
