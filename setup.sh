@@ -17,8 +17,8 @@ fi
 
 if [[ ! -f $HOME/.dircolors ]]; then
   cd $HOME
-  wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
-  mv dircolors.ansi-dark .dircolors
+  wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
+  mv dircolors.ansi-light .dircolors
   eval `dircolors ~/.dircolors`
 fi
 
