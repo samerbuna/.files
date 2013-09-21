@@ -130,7 +130,7 @@ if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
-" se t_Co=16
+set t_Co=16
 " set background=dark
 colorscheme solarized
 
