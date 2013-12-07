@@ -143,3 +143,14 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=green   ctermbg=green
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
+
+""""""""""""""
+" tmux fixes "
+""""""""""""""
+" Handle tmux $TERM quirks in vim
+if $TERM =~ '^screen-256color'
+    map <Esc>OH <Home>
+    map! <Esc>OH <Home>
+    map <Esc>OF <End>
+    map! <Esc>OF <End>
+endif
