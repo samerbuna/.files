@@ -38,7 +38,7 @@ get_bundle tpope vim-git
 get_bundle tpope vim-markdown
 get_bundle tpope vim-pathogen
 get_bundle tpope vim-ragtag
-get_bundle tpope vim-rails
+#get_bundle tpope vim-rails
 get_bundle tpope vim-rake
 get_bundle tpope vim-repeat
 get_bundle tpope vim-sensible
