@@ -25,5 +25,6 @@ alias gap='git add -p'
 alias grc='git rebase --continue'
 alias gfa='git fetch --all'
 alias gw='git branch -a --contains'
+alias gld='git log --decorate --oneline'
 
 alias sudo="sudo "
