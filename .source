@@ -2,3 +2,4 @@ export DF="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . $DF/.exports
 . $DF/.aliases
+. $DF/.git-completion

@@ -40,7 +40,8 @@ set noswapfile              " don't keep swp files either
 set nowrap                  " do not wrap lines
 set nowritebackup           " do not keep a backup while working
 set number                  " line numbers
-set pastetoggle=<F12>
+set paste
+set pastetoggle=<F4>
 set report=0                " tell us about changes
 set ruler                   " show the cursor position all the time
 set scrolloff=1
