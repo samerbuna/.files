@@ -12,20 +12,8 @@ get_bundle() {
   )
 }
 
-
-get_bundle altercation vim-colors-solarized
 get_bundle bling vim-airline
 get_bundle duff vim-bufonly
-# get_bundle godlygeek tabular
-# get_bundle gregsexton gitv
-# get_bundle jgdavey tslime.vim
-# get_bundle jgdavey vim-blockle
-# get_bundle jgdavey vim-turbux
-# get_bundle kchmck vim-coffee-script
-get_bundle kien ctrlp.vim
-get_bundle leshill vim-json
-# get_bundle nathanaelkane vim-indent-guides
-get_bundle nono vim-handlebars
 get_bundle pangloss vim-javascript
 get_bundle tpope vim-abolish
 get_bundle tpope vim-bundler
@@ -47,6 +35,10 @@ get_bundle tpope vim-speeddating
 get_bundle tpope vim-surround
 get_bundle tpope vim-unimpaired
 get_bundle vim-ruby vim-ruby
-# get_bundle wookiehangover jshint.vi
+get_bundle wincent command-t
+get_bundle mxw vim-jsx
+get_bundle isRuslan vim-es6
+get_bundle jeffkreeftmeijer vim-numbertoggle
+get_bundle kchmck vim-coffee-script
 
 vim -c 'call pathogen#helptags()|q'

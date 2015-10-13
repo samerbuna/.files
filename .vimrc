@@ -66,11 +66,15 @@ set whichwrap+=<,>,h,l,[,]  " backspace and cursor keys wrap to
 set wildmenu                " turn on wild menu
 set wildmode=list:longest,full
 
+let mapleader=" "
 nnoremap <silent> <C-K> :%s/\s\+$//g<CR>
+nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
+nnoremap <silent> <Leader>t :CommandT<CR>
 
 call pathogen#runtime_append_all_bundles()
 
 let g:rails_ctags_arguments='--exclude="*.js"'
+let g:jsx_ext_required = 0
 
 iabbrev Lidsa     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al iquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mol lit anim id est laborum
 
@@ -131,9 +135,9 @@ if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
-set t_Co=16
-" set background=dark
-colorscheme solarized
+" set t_Co=16
+set background=dark
+colorscheme smyck
 
 vmap <C-c><C-c> <Plug>SendSelectionToTmux
 nmap <C-c><C-c> <Plug>NormalModeSendToTmux

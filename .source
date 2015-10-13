@@ -1,4 +1,4 @@
-export DF="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DF=~/.files
 
 . $DF/.exports
 . $DF/.aliases
