@@ -2,7 +2,7 @@
 
 echo ".files..."
 if [[ ! -d $HOME/.files ]]; then
-  git clone https://github.com/Coding-House/.files.git $HOME/.files
+  git clone https://github.com/samerbuna/.files.git $HOME/.files
 else
   cd $HOME/.files && git pull --rebase
 fi
