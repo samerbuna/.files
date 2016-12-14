@@ -16,6 +16,7 @@ alias gca='git commit -a -v'
 alias gco="git checkout"
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gdc='git diff --staged --checked'
 alias gdh='git diff HEAD'
 alias gsh='git push'
 alias gll='git pull'
