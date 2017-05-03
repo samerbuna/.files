@@ -1,5 +1,5 @@
 # .files
 
-    sh .files/setup.sh
+    sh ~/.files/setup.sh
 
-    echo "source ~/.files/.source" >> ~/.bashrc
+    echo "source ~/.files/.source" >> ~/.bash_profile

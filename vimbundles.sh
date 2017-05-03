@@ -39,6 +39,5 @@ get_bundle wincent command-t
 get_bundle mxw vim-jsx
 get_bundle isRuslan vim-es6
 get_bundle jeffkreeftmeijer vim-numbertoggle
-get_bundle kchmck vim-coffee-script
 
 vim -c 'call pathogen#helptags()|q'
