@@ -1,0 +1,170 @@
+'.source.js':
+
+  'Empty constructor':
+    'prefix': 'con'
+    'body': '''
+constructor() {
+  super();
+  $1
+}
+    '''
+
+  'export default':
+    'prefix': 'ed'
+    'body': '''
+export default $1;
+    '''
+
+  'const $Func = () => {}':
+    'prefix': 'cf'
+    'body': '''
+const $1 = ($2) => {
+  return $3;
+};
+    '''
+
+  'const $Obj = {}':
+    'prefix': 'co'
+    'body': '''
+const $1 = {
+  $2
+};
+    '''
+
+  'Class Component':
+    'prefix': 'rcc'
+    'body': '''
+import React from 'react';
+
+class $1 extends React.Component {
+  render() {
+    return (
+      $2
+    );
+  }
+}
+
+export default $1;
+    '''
+
+  'Pure Class Component':
+    'prefix': 'rpc'
+    'body': '''
+import React from 'react';
+
+class $1 extends React.PureComponent {
+  render() {
+    return (
+      $2
+    );
+  }
+}
+
+export default $1;
+    '''
+
+  'Function Component':
+    'prefix': 'rfc'
+    'body': '''
+import React from 'react';
+
+const $1 = (props) => {
+  return (
+    $2
+  );
+};
+
+export default $1;
+    '''
+
+  'Import From':
+    'prefix': 'imf'
+    'body': '''
+import $1 from '$2';
+    '''
+
+  'Import From .':
+    'prefix': 'imf.'
+    'body': '''
+import $1 from './$1';
+    '''
+
+  'Import From ..':
+    'prefix': 'imf..'
+    'body': '''
+import $1 from '../$1';
+    '''
+
+  'componentDidMount':
+    'prefix': 'cDM'
+    'body': '''
+componentDidMount() {
+  $1
+}
+    '''
+
+  'componentWillReceiveProps':
+    'prefix': 'cWRP'
+    'body': '''
+componentWillReceiveProps(nextProps) {
+  $1
+}
+    '''
+
+  'shouldComponentUpdate':
+    'prefix': 'sCU'
+    'body': '''
+shouldComponentUpdate(nextProps, nextState) {
+  $1
+}
+    '''
+
+  'componentWillUpdate':
+    'prefix': 'cWU'
+    'body': '''
+componentWillUpdate(nextProps, nextState) {
+  $1
+}
+    '''
+
+  'componentDidUpdate':
+    'prefix': 'cDU'
+    'body': '''
+componentDidUpdate(prevProps, prevState) {
+  $1
+}
+    '''
+
+  'componentWillUnmount':
+    'prefix': 'cWUn'
+    'body': '''
+componentWillUnmount() {
+  $1
+}
+    '''
+
+  'this.setState()':
+    'prefix': 'ss'
+    'body': '''
+this.setState((prevState) => {
+  return $1;
+});
+    '''
+
+  'describe()':
+    'prefix': 'desc'
+    'body': '''
+describe('$1', () => {
+
+  $2
+
+});
+    '''
+
+  'it()':
+    'prefix': 'it'
+    'body': '''
+it('$1', () => {
+  $2
+});
+    '''
