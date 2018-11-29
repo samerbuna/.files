@@ -10,8 +10,6 @@ fi
 cd $HOME
 
 echo "Linking dotfile..."
-ln -fs .files/.gemrc
-ln -fs .files/.tmux.conf
 ln -fs .files/.vim
 ln -fs .files/.vimrc
 

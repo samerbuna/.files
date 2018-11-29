@@ -2,10 +2,7 @@ alias ll='ls -al'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias v='gvim > /dev/null 2>&1'
-
 alias 'ps?'='ps -ef | grep -i '
-alias 'ant?'='ant -p | grep -i'
 alias 'file?'='find . | grep -i'
 
 alias g='git'

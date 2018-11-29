@@ -1,6 +1,6 @@
-VISUAL=vim
+VISUAL=mvim
 EDITOR="$VISUAL"
-GEM_OPEN_EDITOR="gvim"
+GEM_OPEN_EDITOR="mvim"
 
 LESS="FRX"
 RI="--format ansi -T"
@@ -10,5 +10,6 @@ LSCOLORS=gxgxcxdxbxegedabagacad
 
 HISTCONTROL=erasedups
 HISTSIZE=9999
+PS1="\[\033[01;30m\]\w\[\033[0m\] $ "
 
 export VISUAL EDITOR GEM_OPEN_EDITOR LESS RI CLICOLOR LSCOLORS SCREEN
